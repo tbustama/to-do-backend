@@ -1,6 +1,7 @@
 class NotesController < ApplicationController
     def create
         note = Note.create(params)
+        render json: note
     end
 
     def update

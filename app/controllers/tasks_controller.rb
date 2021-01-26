@@ -1,6 +1,7 @@
 class TasksController < ApplicationController
     def create
         task = Task.create(params)
+        render json: task
     end
 
     def update
